@@ -1,0 +1,105 @@
+/**************************************/
+/*************** LAYOUT **************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.h-80 { height: 5rem; }
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.col {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+}
+
+.flex { display: flex; }
+.space-between { justify-content: space-between; }
+.space-around { justify-content: space-around; }
+.content-center { justify-content: center; }
+.align-center { align-content: center; }
+.align-itmes-center { align-items: center; }
+
+.min-height-20 { min-height: 1.25rem;}
+.min-height-50 { min-height: 3.125rem;}
+
+.col-1-xs  { flex-basis: calc((100% / 12) *  1); max-width: calc((100% / 12) *  1); }
+.col-2-xs  { flex-basis: calc((100% / 12) *  2); max-width: calc((100% / 12) *  2); }
+.col-3-xs  { flex-basis: calc((100% / 12) *  3); max-width: calc((100% / 12) *  3); }
+.col-4-xs  { flex-basis: calc((100% / 12) *  4); max-width: calc((100% / 12) *  4); }
+.col-5-xs  { flex-basis: calc((100% / 12) *  5); max-width: calc((100% / 12) *  5); }
+.col-6-xs  { flex-basis: calc((100% / 12) *  6); max-width: calc((100% / 12) *  6); }
+.col-7-xs  { flex-basis: calc((100% / 12) *  7); max-width: calc((100% / 12) *  7); }
+.col-8-xs  { flex-basis: calc((100% / 12) *  8); max-width: calc((100% / 12) *  8); }
+.col-9-xs  { flex-basis: calc((100% / 12) *  9); max-width: calc((100% / 12) *  9); }
+.col-10-xs { flex-basis: calc((100% / 12) * 10); max-width: calc((100% / 12) *  10); }
+.col-11-xs { flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) *  11); }
+.col-12-xs { flex-basis: calc((100% / 12) * 12); max-width: calc((100% / 12) *  12); }
+
+.col-offset-1 { margin-left: calc((100% / 12) * 1); }
+.col-offset-2 { margin-left: calc((100% / 12) * 2); }
+.col-offset-3 { margin-left: calc((100% / 12) * 3); }
+.col-offset-4 { margin-left: calc((100% / 12) * 4); }
+.col-offset-5 { margin-left: calc((100% / 12) * 5); }
+.col-offset-6 { margin-left: calc((100% / 12) * 6); }
+.col-offset-7 { margin-left: calc((100% / 12) * 7); }
+.col-offset-8 { margin-left: calc((100% / 12) * 8); }
+.col-offset-9 { margin-left: calc((100% / 12) * 9); }
+.col-offset-10 { margin-left: calc((100% / 12) * 10); }
+.col-offset-11 { margin-left: calc((100% / 12) * 11); }
+.col-offset-12 { margin-left: calc((100% / 12) * 12); }
+
+
+/********************************************************/
+/******************** MQ TABLET 768PX ******************/
+@media screen and (min-width: 48rem) {
+    .col-1-md { flex-basis: calc((100% / 12) *  1); max-width: calc((100% / 12) *  1); }
+    .col-2-md { flex-basis: calc((100% / 12) *  2); max-width: calc((100% / 12) *  2); }
+    .col-3-md { flex-basis: calc((100% / 12) *  3); max-width: calc((100% / 12) *  3); }
+    .col-4-md { flex-basis: calc((100% / 12) *  4); max-width: calc((100% / 12) *  4); }
+    .col-5-md { flex-basis: calc((100% / 12) *  5); max-width: calc((100% / 12) *  5); }
+    .col-6-md { flex-basis: calc((100% / 12) *  6); max-width: calc((100% / 12) *  6); }
+    .col-7-md { flex-basis: calc((100% / 12) *  7); max-width: calc((100% / 12) *  7); }
+    .col-8-md { flex-basis: calc((100% / 12) *  8); max-width: calc((100% / 12) *  8); }
+    .col-0-md { flex-basis: calc((100% / 12) *  9); max-width: calc((100% / 12) *  9); }
+    .col-10-md { flex-basis: calc((100% / 12) * 10); max-width: calc((100% / 12) *  10); }
+    .col-11-md { flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) *  11); }
+    .col-12-md { flex-basis: calc((100% / 12) * 12); max-width: calc((100% / 12) *  12); }
+}
+
+
+/********************************************************/
+/******************** MQ DESKTOP 992PX ******************/
+@media screen and (min-width: 62rem) {
+    .col-1-xl { flex-basis: calc((100% / 12) *  1); max-width: calc((100% / 12) *  1); }
+    .col-2-xl { flex-basis: calc((100% / 12) *  2); max-width: calc((100% / 12) *  2); }
+    .col-3-xl { flex-basis: calc((100% / 12) *  3); max-width: calc((100% / 12) *  3); }
+    .col-4-xl { flex-basis: calc((100% / 12) *  4); max-width: calc((100% / 12) *  4); }
+    .col-5-xl { flex-basis: calc((100% / 12) *  5); max-width: calc((100% / 12) *  5); }
+    .col-6-xl { flex-basis: calc((100% / 12) *  6); max-width: calc((100% / 12) *  6); }
+    .col-7-xl { flex-basis: calc((100% / 12) *  7); max-width: calc((100% / 12) *  7); }
+    .col-8-xl { flex-basis: calc((100% / 12) *  8); max-width: calc((100% / 12) *  8); }
+    .col-9-xl { flex-basis: calc((100% / 12) *  9); max-width: calc((100% / 12) *  9); }
+    .col-10-xl { flex-basis: calc((100% / 12) * 10); max-width: calc((100% / 12) *  10); }
+    .col-11-xl { flex-basis: calc((100% / 12) * 11); max-width: calc((100% / 12) *  11); }
+    .col-12-xl { flex-basis: calc((100% / 12) * 12); max-width: calc((100% / 12) *  12); }
+}
+

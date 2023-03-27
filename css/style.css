@@ -1,5 +1,12 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/*****************************************************/
+/************** Layout Mobile Firts XS **************/
+body { background-color: brown; }
+
+body.debug [class*='col-'] {
+    border: solid 1px white;
+    background-color: blueviolet;
 }
+
+.container { background-color: cornflowerblue;}
+.bg-color-white { background-color: white; }
+.bg-color-green { background-color: green !important; } 
